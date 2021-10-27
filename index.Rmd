@@ -1,0 +1,23 @@
+---
+title: "Some content for my project"
+subtitle: "My analysis"
+output: 
+  html_document:
+    toc: false
+    toc_float: true  
+---
+
+
+
+```{r echo=FALSE, eval=FALSE}
+# build and dump the Rmd in docs
+rmarkdown::render("index.Rmd", # file to convert to html
+    output_dir="./docs")# save to the docs folder to serve by github pages
+```
+
+
+# Hello world
+
+```{r}
+plot(runif(100))
+```
