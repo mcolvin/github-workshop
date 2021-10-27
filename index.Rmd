@@ -21,3 +21,12 @@ rmarkdown::render("index.Rmd", # file to convert to html
 ```{r}
 plot(runif(100))
 ```
+
+```{r}
+dat<-read.csv("_dat/richness-data.csv")
+head(dat)
+plot(richness~ele_meters,dat) 
+fit<-lm(ln_richness~ln_ele,dat)
+fit 
+```
+
