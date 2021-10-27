@@ -1,0 +1,36 @@
+---
+title: "Some resources"
+subtitle: "Many folks have put together content far better than I"
+output: 
+  html_document:
+    toc: false
+    toc_float: true  
+---
+
+
+```{r echo=FALSE,eval=FALSE}
+# build and dump the Rmd in docs
+rmarkdown::render("resources.Rmd", # file to convert to html
+    output_dir="./docs")# save to the docs folder to serve by github pages
+```
+# Academic pricing
+
+* [https://education.github.com/benefits](https://education.github.com/benefits)
+
+# Some tutorials
+
+The 3 bullets below are usually where I put people in my lab to get a bit of background.
+
+* [Getting started with GitHub](https://docs.github.com/en)
+* [GitHub Guide](https://guides.github.com/)
+* [What is GitHub, an introduction](https://www.muo.com/what-is-github-an-introduction/)
+
+I can't vouch for any of these, but they look cool and keep in mind 
+there are lots more content out there beyond this on the line. 
+
+* [A video on How to Create Repository in GitHub](https://www.youtube.com/watch?v=9yuCrlw2Wmc)
+* [A minimal tutorial](https://kbroman.org/github_tutorial/)
+* [GitHub Learning Lab](https://lab.github.com)
+* [Making a repository citable](https://guides.github.com/activities/citable-code/)
+* [Using Git and GitHub with an R emphasis](https://happygitwithr.com/index.html)
+* [Wanna get taught by a bot as a teammate?](https://profy.dev/project/github-minesweeper)
