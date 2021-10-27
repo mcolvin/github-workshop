@@ -26,7 +26,8 @@ plot(runif(100))
 dat<-read.csv("_dat/richness-data.csv")
 head(dat)
 plot(richness~ele_meters,dat) 
-fit<-lm(ln_richness~ln_ele,dat)
+fit<-nls(richness~a*ele_meters^b,dat,
+    start=list(a=0.001, b=1.02))
 fit 
 ```
 
